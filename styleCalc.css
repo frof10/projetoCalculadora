@@ -1,0 +1,145 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo da aplicação */
+body {
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* ---------------- CALCULADORA ---------------- */
+
+.calculator {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Display */
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 22px;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  outline: none;
+  background-color: #f8f9fc;
+}
+
+/* Grade de botões */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Botões padrão */
+button {
+  height: 50px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: #e2e6ea;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #d6d8db;
+}
+
+/* Botão igual */
+#equals {
+  background-color: #4e73df;
+  color: white;
+}
+
+#equals:hover {
+  background-color: #2e59d9;
+}
+
+/* Botão limpar */
+#clear {
+  grid-column: span 4;
+  background-color: #e74a3b;
+  color: white;
+}
+
+#clear:hover {
+  background-color: #c0392b;
+}
+
+/* ---------------- HISTÓRICO ---------------- */
+
+.history {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 220px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.history h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Lista */
+.history ul {
+  list-style: none;
+  padding: 0;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+/* Itens */
+.history li {
+  background-color: #f8f9fc;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  border-left: 4px solid #4e73df;
+}
+#btnLimparHistorico {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e74a3b;
+  color: white;
+  cursor: pointer;
+}
+
+#btnLimparHistorico:hover {
+  background-color: #c0392b;
+}

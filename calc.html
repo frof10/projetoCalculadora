@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Rápida</title>
+  <link rel="stylesheet" href="styleCalc.css">
+</head>
+<body>
+
+  <div class="container">
+
+
+      <div class="calculator">
+
+      <h2 class="title">Calculadora Rápida</h2>
+
+      <input type="text" id="display" disabled>
+
+      <div class="buttons">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>/</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>*</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>-</button>
+
+        <button>0</button>
+        <button>.</button>
+        <button id="equals">=</button>
+        <button>+</button>
+
+        <button id="clear">C</button>
+      </div>
+    </div>
+
+    
+    <div class="history">
+      <h3>Últimos Cálculos</h3>
+      <ul id="listaHistorico"></ul>
+      <button id="btnLimparHistorico">Limpar Histórico</button>
+    </div>
+
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
