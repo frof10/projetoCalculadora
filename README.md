@@ -1,9 +1,9 @@
-#🧮 Calculadora Rápida (Electron)
+🧮 Calculadora Rápida (Electron)
 
 Uma calculadora desktop desenvolvida com Electron, utilizando HTML, CSS e JavaScript.
 O projeto permite realizar operações matemáticas básicas, salvar histórico de cálculos e gerar executável para Windows.
 
-##🚀 Funcionalidades
+🚀 Funcionalidades
 
 ✅ Operações básicas: + - * /
 ✅ Botão de limpar visor
@@ -13,12 +13,12 @@ O projeto permite realizar operações matemáticas básicas, salvar histórico 
 ✅ Armazenamento local de dados
 ✅ Geração de executável .exe
 
-##🛠️ Tecnologias Utilizadas
+🛠️ Tecnologias Utilizadas
 
-* Electron
-* Node.js
-* HTML5
-* CSS3
-* JavaScript
-* IPC (Comunicação entre processos)
-* File System (fs)
+Electron
+Node.js
+HTML5
+CSS3
+JavaScript
+IPC (Comunicação entre processos)
+File System (fs)
